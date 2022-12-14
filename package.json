@@ -1,0 +1,43 @@
+{
+  "name": "@driskcover/drisk-sdk",
+  "version": "0.1.18",
+  "description": "dRisk SDK that allows you to easily buy cover",
+  "main": "dist/sdk.js",
+  "scripts": {
+    "build": "browserify ./src/index.js -o ./dist/sdk.js -p esmify -s DriskSDK"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dRiskTech/drisk-sdk.git"
+  },
+  "keywords": [
+    "fiat",
+    "ramp",
+    "on",
+    "off",
+    "cryptocurrency"
+  ],
+  "author": "dRisk",
+  "license": "ISC",
+  "dependencies": {
+    "events": "^3.1.0",
+    "query-string": "^6.12.1",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "browserify": "^16.5.0",
+    "esmify": "^2.1.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
