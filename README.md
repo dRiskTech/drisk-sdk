@@ -1,4 +1,4 @@
-# Drisk SDK
+# dRisk SDK
 
 Get Paid For Your Crypto Portfolio Losses
 
