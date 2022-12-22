@@ -1,8 +1,8 @@
 export default {
     ENVIRONMENT: {
         STAGING: {
-            FRONTEND: 'https://web-sdk-stg.drisk.io',
-            BACKEND: 'https://stg.drisk.io',
+            FRONTEND: 'https://web-sdk-dev.drisk.io',
+            BACKEND: 'https://dev.drisk.io',
             NAME: 'STAGING'
         },
         LOCAL_DEVELOPMENT: {
