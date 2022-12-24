@@ -1,6 +1,6 @@
 {
   "name": "@driskcover/drisk-sdk",
-  "version": "0.1.19",
+  "version": "0.1.20",
   "description": "dRisk SDK that allows you to easily buy cover",
   "main": "dist/sdk.js",
   "scripts": {
@@ -11,7 +11,7 @@
     "url": "git+https://github.com/dRiskTech/drisk-sdk.git"
   },
   "keywords": [
-    "fiat",
+    "trade",
     "cover",
     "portfolio",
     "loss coverage",

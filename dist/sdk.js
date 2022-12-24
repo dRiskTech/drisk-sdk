@@ -1075,7 +1075,7 @@ module.exports = str => encodeURIComponent(str).replace(/[!'()*]/g, x => `%${x.c
 },{}],7:[function(require,module,exports){
 module.exports={
   "name": "@driskcover/drisk-sdk",
-  "version": "0.1.18",
+  "version": "0.1.20",
   "description": "dRisk SDK that allows you to easily buy cover",
   "main": "dist/sdk.js",
   "scripts": {
@@ -1086,10 +1086,10 @@ module.exports={
     "url": "git+https://github.com/dRiskTech/drisk-sdk.git"
   },
   "keywords": [
-    "fiat",
-    "ramp",
-    "on",
-    "off",
+    "trade",
+    "cover",
+    "portfolio",
+    "loss coverage",
     "cryptocurrency"
   ],
   "author": "dRisk",
@@ -1326,8 +1326,8 @@ exports.default = void 0;
 var _default = {
   ENVIRONMENT: {
     STAGING: {
-      FRONTEND: 'https://web-sdk-stg.drisk.io',
-      BACKEND: 'https://stg.drisk.io',
+      FRONTEND: 'https://web-sdk-dev.drisk.io',
+      BACKEND: 'https://dev.drisk.io',
       NAME: 'STAGING'
     },
     LOCAL_DEVELOPMENT: {
