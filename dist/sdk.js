@@ -1480,7 +1480,8 @@ async function generateURL(configData) {
     environment = 'development',
     queryString = "",
     width = "100%",
-    height = "100%";
+    height = "100%",
+    screenName = 'buycover';
   if (configData) {
     configData.hostURL = window.location.origin;
     if (configData.apiKey) {
@@ -1503,12 +1504,13 @@ async function generateURL(configData) {
     } else throw _constants.errorsLang.ENTER_API_KEY;
     if (configData.widgetWidth) width = configData.widgetWidth;
     if (configData.widgetHeight) height = configData.widgetHeight;
+    if (configData.screenName === "DASHBOARD") screenName = 'allcovers';
   }
   return {
     width,
     height,
     partnerData,
-    url: `${_constants.config.ENVIRONMENT[environment].FRONTEND}/buycover?${queryString}`
+    url: `${_constants.config.ENVIRONMENT[environment].FRONTEND}/${screenName}?${queryString}`
   };
 }
 async function setStyle(themeColor, width, height) {

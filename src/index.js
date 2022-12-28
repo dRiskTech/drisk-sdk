@@ -89,7 +89,7 @@ DriskSDK.prototype.modal = async function () {
 }
 
 async function generateURL(configData) {
-    let partnerData = {}, environment = 'development', queryString = "", width = "100%", height = "100%";
+    let partnerData = {}, environment = 'development', queryString = "", width = "100%", height = "100%", screenName = 'buycover';
     if (configData) {
         configData.hostURL = window.location.origin;
         if (configData.apiKey) {
@@ -111,8 +111,9 @@ async function generateURL(configData) {
         else throw (errorsLang.ENTER_API_KEY);
         if (configData.widgetWidth) width = configData.widgetWidth;
         if (configData.widgetHeight) height = configData.widgetHeight;
+        if(configData.screenName === "DASHBOARD") screenName = 'allcovers';
     }
-    return { width, height, partnerData, url: `${config.ENVIRONMENT[environment].FRONTEND}/buycover?${queryString}` }
+    return { width, height, partnerData, url: `${config.ENVIRONMENT[environment].FRONTEND}/${screenName}?${queryString}` }
 }
 
 async function setStyle(themeColor, width, height) {
